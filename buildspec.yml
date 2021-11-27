@@ -2,15 +2,15 @@ version: 0.2
 phases:
   pre_build:
     commands:
-    - echo "Entered the pre-build phase"
+       - echo "Entered the pre-build phase"
   build:
     commands:
-    - echo "Entered build phase"
-    - mvn clean package
+       - echo "Entered build phase"
+       - mvn clean package
   post_build:
     commands:
-    - echo "Entered post build phase"
+       - echo "Entered post build phase"
 artifacts:
   files:
-    - target/aws-cicd-infy-v1.war
+    - target/aws-cicd-infy-v1.jar
   discard-paths: yes
